@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Maker</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Maker</h1>
+        </header>
+
+        <div class="content">
+            <section class="input-section">
+                <form id="resume-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">Contact Info:</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="summary">Summary:</label>
+                        <div id="summary" class="editable" contenteditable="true"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Skills:</label>
+                        <div id="skills" class="editable" contenteditable="true"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Education:</label>
+                        <div id="education" class="editable" contenteditable="true"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Experience:</label>
+                        <div id="experience" class="editable" contenteditable="true"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projects">Projects:</label>
+                        <div id="projects" class="editable" contenteditable="true"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="certifications">Certifications:</label>
+                        <div id="certifications" class="editable" contenteditable="true"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="languages">Languages:</label>
+                        <div id="languages" class="editable" contenteditable="true"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="references">References:</label>
+                        <div id="references" class="editable" contenteditable="true"></div>
+                    </div>
+                </form>
+            </section>
+
+            <section class="options-section">
+                <div class="template-section">
+                    <h2>Template Choices</h2>
+                    <select id="template-select">
+                        <option value="template1">Template 1</option>
+                        <option value="template2">Template 2</option>
+                        <option value="template3">Template 3</option>
+                    </select>
+                </div>
+
+                <div class="preview-section">
+                    <h2>Live Preview</h2>
+                    <div id="resume-preview" class="resume-preview"></div>
+                </div>
+
+                <div class="format-section">
+                    <h2>Download</h2>
+                    <button id="download-pdf">Download PDF</button>
+                    <button id="download-docx">Download Docx</button>
+                    <button id="download-txt">Download Txt</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="first.js"></script>
+</body>
+</html>

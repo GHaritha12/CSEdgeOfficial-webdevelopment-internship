@@ -1,0 +1,112 @@
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.options-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], .editable {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: #fff;
+}
+
+.editable {
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    line-height: 1.6;
+    overflow: auto;
+}
+
+.options-section h2 {
+    margin-top: 0;
+}
+
+.template-section, .preview-section, .format-section {
+    margin-bottom: 20px;
+}
+
+.resume-preview {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    min-height: 300px;
+    overflow: auto;
+}
+
+.format-section button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.format-section button:hover {
+    background-color: #0056b3;
+}
+
